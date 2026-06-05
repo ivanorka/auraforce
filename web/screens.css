@@ -158,65 +158,6 @@
   color: var(--text);
 }
 
-.desktop-preview-card {
-  min-height: 238px;
-  display: grid;
-  align-content: space-between;
-  border-bottom: 1px solid rgba(241, 213, 146, 0.12);
-  padding: 20px;
-  background:
-    radial-gradient(circle at 82% 18%, rgba(72, 214, 200, 0.16), transparent 34%),
-    linear-gradient(145deg, rgba(241, 213, 146, 0.08), transparent 48%),
-    rgba(8, 9, 11, 0.46);
-}
-
-.desktop-preview-card span,
-.desktop-preview-card strong,
-.desktop-preview-card em {
-  display: block;
-}
-
-.desktop-preview-card span {
-  width: max-content;
-  min-height: 28px;
-  display: inline-flex;
-  align-items: center;
-  border: 1px solid rgba(241, 213, 146, 0.22);
-  border-radius: 6px;
-  padding: 0 9px;
-  color: var(--champagne);
-  font-size: 11px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
-.desktop-preview-card strong {
-  margin-top: 22px;
-  font-size: 26px;
-  line-height: 1.12;
-}
-
-.desktop-preview-card p {
-  max-width: 290px;
-  margin: 10px 0 18px;
-  color: var(--muted);
-}
-
-.desktop-preview-card em {
-  width: max-content;
-  min-height: 34px;
-  display: inline-flex;
-  align-items: center;
-  border: 1px solid rgba(241, 213, 146, 0.34);
-  border-radius: 6px;
-  padding: 0 11px;
-  color: #151207;
-  background: var(--champagne);
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 900;
-}
-
 .desktop-gallery img {
   width: 100%;
   display: block;
@@ -268,38 +209,6 @@
 
 .mobile-gallery {
   gap: 18px;
-}
-
-.mobile-page-control {
-  display: none;
-  justify-content: center;
-  gap: 8px;
-  margin-bottom: 14px;
-  padding: 3px 0 2px;
-}
-
-#gallery-mobile:checked ~ .gallery-panels .mobile-page-control {
-  display: flex;
-}
-
-.mobile-page-control a {
-  min-width: 34px;
-  min-height: 34px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(241, 213, 146, 0.2);
-  border-radius: 999px;
-  color: var(--muted);
-  background: rgba(8, 9, 11, 0.48);
-  font-size: 11px;
-  font-weight: 900;
-}
-
-.mobile-page-control a:hover,
-.mobile-page-control a:focus-visible {
-  color: #151207;
-  background: var(--champagne);
 }
 
 .module-gallery-section {
