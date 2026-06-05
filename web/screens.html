@@ -73,8 +73,12 @@
             <div class="gallery-panel desktop-gallery" aria-label="Desktop product screens">
               <article>
                 <a class="desktop-zoom-trigger" href="#zoom-command">
-                  <img src="../assets/screens/01-command-dashboard.png" alt="AuraForce AI executive command dashboard">
-                  <span>Zoom desktop</span>
+                  <div class="desktop-preview-card">
+                    <span>Screen 01</span>
+                    <strong>Executive Command</strong>
+                    <p>Pipeline, AI employees, response speed and wallet status.</p>
+                    <em>View full screen</em>
+                  </div>
                 </a>
                 <div>
                   <span>Desktop 01</span>
@@ -84,8 +88,12 @@
               </article>
               <article>
                 <a class="desktop-zoom-trigger" href="#zoom-inbox">
-                  <img src="../assets/screens/02-unified-inbox.png" alt="AuraForce AI unified inbox live lead desk">
-                  <span>Zoom desktop</span>
+                  <div class="desktop-preview-card">
+                    <span>Screen 02</span>
+                    <strong>Live Lead Desk</strong>
+                    <p>Inquiry, AI reply, qualification, booking and handoff.</p>
+                    <em>View full screen</em>
+                  </div>
                 </a>
                 <div>
                   <span>Desktop 02</span>
@@ -95,8 +103,12 @@
               </article>
               <article>
                 <a class="desktop-zoom-trigger" href="#zoom-employee">
-                  <img src="../assets/screens/03-ai-employee-studio.png" alt="AuraForce AI employee studio permissions and scripts">
-                  <span>Zoom desktop</span>
+                  <div class="desktop-preview-card">
+                    <span>Screen 03</span>
+                    <strong>AI Employee Studio</strong>
+                    <p>Role permissions, scripts, tone and escalation boundaries.</p>
+                    <em>View full screen</em>
+                  </div>
                 </a>
                 <div>
                   <span>Desktop 03</span>
@@ -106,8 +118,12 @@
               </article>
               <article>
                 <a class="desktop-zoom-trigger" href="#zoom-bookings">
-                  <img src="../assets/screens/04-bookings-calendar.png" alt="AuraForce AI appointment booking calendar">
-                  <span>Zoom desktop</span>
+                  <div class="desktop-preview-card">
+                    <span>Screen 04</span>
+                    <strong>Bookings & Calendar</strong>
+                    <p>Viewing slots, AI proposals, reminders and availability.</p>
+                    <em>View full screen</em>
+                  </div>
                 </a>
                 <div>
                   <span>Desktop 04</span>
@@ -117,8 +133,12 @@
               </article>
               <article>
                 <a class="desktop-zoom-trigger" href="#zoom-wallet">
-                  <img src="../assets/screens/05-usage-wallet-billing.png" alt="AuraForce AI usage wallet and billing controls">
-                  <span>Zoom desktop</span>
+                  <div class="desktop-preview-card">
+                    <span>Screen 05</span>
+                    <strong>Usage Wallet & Billing</strong>
+                    <p>Tokens, calls, WhatsApp, top-ups, caps and margin control.</p>
+                    <em>View full screen</em>
+                  </div>
                 </a>
                 <div>
                   <span>Desktop 05</span>
@@ -128,8 +148,12 @@
               </article>
               <article>
                 <a class="desktop-zoom-trigger" href="#zoom-knowledge">
-                  <img src="../assets/screens/06-knowledge-workflows.png" alt="AuraForce AI knowledge base and workflow automation controls">
-                  <span>Zoom desktop</span>
+                  <div class="desktop-preview-card">
+                    <span>Screen 06</span>
+                    <strong>Knowledge & Workflows</strong>
+                    <p>Approved brain, workflow rules, review queue and safe learning.</p>
+                    <em>View full screen</em>
+                  </div>
                 </a>
                 <div>
                   <span>Desktop 06</span>
@@ -139,8 +163,16 @@
               </article>
             </div>
 
+            <nav class="mobile-page-control" aria-label="Mobile app screen pages">
+              <a href="#mobile-command" aria-label="Mobile Command screen">01</a>
+              <a href="#mobile-lead-desk" aria-label="Mobile Lead Desk screen">02</a>
+              <a href="#mobile-ai-studio" aria-label="Mobile AI Studio screen">03</a>
+              <a href="#mobile-bookings" aria-label="Mobile Bookings screen">04</a>
+              <a href="#mobile-wallet" aria-label="Mobile Wallet screen">05</a>
+              <a href="#mobile-knowledge" aria-label="Mobile Knowledge screen">06</a>
+            </nav>
             <div class="gallery-panel mobile-gallery" aria-label="Mobile app product screens">
-              <article class="phone-card">
+              <article class="phone-card" id="mobile-command">
                 <div class="phone-frame">
                   <div class="phone-screen mobile-command">
                     <div class="phone-status"><span>9:41</span><span>5G</span></div>
@@ -172,7 +204,7 @@
                 <p>Native-style owner overview for daily lead and booking control.</p>
               </article>
 
-              <article class="phone-card">
+              <article class="phone-card" id="mobile-lead-desk">
                 <div class="phone-frame">
                   <div class="phone-screen mobile-inbox">
                     <div class="phone-status"><span>9:41</span><span>5G</span></div>
@@ -200,7 +232,7 @@
                 <p>AI-human conversation flow with booking and escalation controls.</p>
               </article>
 
-              <article class="phone-card">
+              <article class="phone-card" id="mobile-ai-studio">
                 <div class="phone-frame">
                   <div class="phone-screen mobile-studio">
                     <div class="phone-status"><span>9:41</span><span>5G</span></div>
@@ -232,7 +264,7 @@
                 <p>Native controls for permissions, rules, tone and human-approved limits.</p>
               </article>
 
-              <article class="phone-card">
+              <article class="phone-card" id="mobile-bookings">
                 <div class="phone-frame">
                   <div class="phone-screen mobile-bookings">
                     <div class="phone-status"><span>9:41</span><span>5G</span></div>
@@ -262,7 +294,7 @@
                 <p>Appointment control for viewing slots, reminders and approvals.</p>
               </article>
 
-              <article class="phone-card">
+              <article class="phone-card" id="mobile-wallet">
                 <div class="phone-frame">
                   <div class="phone-screen mobile-wallet">
                     <div class="phone-status"><span>9:41</span><span>5G</span></div>
@@ -290,7 +322,7 @@
                 <p>Usage, plan balance and top-up controls for margin safety.</p>
               </article>
 
-              <article class="phone-card">
+              <article class="phone-card" id="mobile-knowledge">
                 <div class="phone-frame">
                   <div class="phone-screen mobile-knowledge">
                     <div class="phone-status"><span>9:41</span><span>5G</span></div>
