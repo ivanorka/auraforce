@@ -139,10 +139,10 @@
               </article>
             </div>
 
-            <div class="mobile-scroll-hint" aria-hidden="true">
-              <span>&larr;</span>
-              <i></i>
-              <span>&rarr;</span>
+            <div class="mobile-scroll-hint" aria-label="Scroll mobile app screens">
+              <button type="button" data-mobile-scroll="prev" aria-label="Previous mobile screen">&larr;</button>
+              <i aria-hidden="true"></i>
+              <button type="button" data-mobile-scroll="next" aria-label="Next mobile screen">&rarr;</button>
             </div>
 
             <div class="gallery-panel mobile-gallery" aria-label="Mobile app product screens">
@@ -1099,5 +1099,25 @@
         </figure>
       </div>
     </main>
+    <script>
+      const mobileGallery = document.querySelector(".mobile-gallery");
+      const mobileScrollButtons = document.querySelectorAll("[data-mobile-scroll]");
+
+      mobileScrollButtons.forEach((button) => {
+        button.addEventListener("click", () => {
+          if (!mobileGallery) return;
+
+          const firstCard = mobileGallery.querySelector(".phone-card");
+          const cardWidth = firstCard ? firstCard.getBoundingClientRect().width : mobileGallery.clientWidth;
+          const gap = Number.parseFloat(getComputedStyle(mobileGallery).columnGap) || 0;
+          const direction = button.dataset.mobileScroll === "next" ? 1 : -1;
+
+          mobileGallery.scrollBy({
+            left: direction * (cardWidth + gap),
+            behavior: "smooth"
+          });
+        });
+      });
+    </script>
   </body>
 </html>

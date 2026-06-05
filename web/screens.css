@@ -1649,18 +1649,26 @@ dd {
     padding: 2px 0;
   }
 
-  .mobile-scroll-hint span {
+  .mobile-scroll-hint button {
     width: 36px;
     height: 36px;
+    min-height: 36px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(241, 213, 146, 0.2);
     border-radius: 999px;
+    padding: 0;
     color: var(--champagne);
     background: rgba(8, 9, 11, 0.54);
     font-size: 16px;
     font-weight: 900;
+    cursor: pointer;
+  }
+
+  .mobile-scroll-hint button:focus-visible {
+    outline: 2px solid var(--champagne);
+    outline-offset: 3px;
   }
 
   .mobile-scroll-hint i {
