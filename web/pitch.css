@@ -1,0 +1,374 @@
+:root {
+  --obsidian: #08090b;
+  --charcoal: #111318;
+  --gold: #d4af37;
+  --champagne: #f1d592;
+  --aqua: #48d6c8;
+  --text: #f6f1e7;
+  --muted: #beb7aa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  background: var(--obsidian);
+  color: var(--text);
+  font-family: Inter, "Plus Jakarta Sans", Arial, sans-serif;
+}
+
+.deck {
+  background: var(--obsidian);
+}
+
+.slide {
+  position: relative;
+  width: 16in;
+  height: 9in;
+  overflow: hidden;
+  page-break-after: always;
+  padding: 0.58in 0.64in;
+  background:
+    radial-gradient(circle at 84% 10%, rgba(72, 214, 200, 0.16), transparent 28%),
+    linear-gradient(180deg, #111318, #08090b);
+}
+
+.slide-content {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+}
+
+.cover-slide {
+  background: #08090b;
+}
+
+.slide-bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(90deg, rgba(8, 9, 11, 0.96), rgba(8, 9, 11, 0.64)),
+    url("../assets/hero-dubai-skyline.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cover-layout,
+.split,
+.why-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 0.55in;
+  align-items: center;
+}
+
+.eyebrow {
+  margin: 0 0 0.12in;
+  color: var(--champagne);
+  font-size: 13pt;
+  font-weight: 850;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0.22in;
+  font-size: 70pt;
+  line-height: 0.94;
+  letter-spacing: 0;
+}
+
+h2 {
+  margin-bottom: 0.24in;
+  font-size: 43pt;
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+p,
+li {
+  color: var(--muted);
+  font-size: 17pt;
+  line-height: 1.48;
+}
+
+.lead {
+  max-width: 7in;
+  color: #f2ebdc;
+  font-size: 22pt;
+}
+
+.deck-logo {
+  width: 0.72in;
+  height: 0.72in;
+  display: block;
+  margin-bottom: 0.24in;
+  border-radius: 0.12in;
+}
+
+.tag-row {
+  display: flex;
+  gap: 0.12in;
+  margin-top: 0.34in;
+}
+
+.tag-row span,
+.flow-stack span {
+  border: 1px solid rgba(241, 213, 146, 0.22);
+  border-radius: 0.08in;
+  padding: 0.12in 0.16in;
+  background: rgba(255, 255, 255, 0.05);
+  color: var(--text);
+  font-weight: 850;
+}
+
+.deck-card,
+.contact-card,
+.proof-list article,
+.module-grid article,
+.stat-grid article,
+.employee-slide-grid article,
+.pricing-grid article,
+.roadmap-grid article,
+.funds-grid article {
+  border: 1px solid rgba(241, 213, 146, 0.18);
+  border-radius: 0.12in;
+  background:
+    linear-gradient(135deg, rgba(241, 213, 146, 0.1), transparent 42%),
+    rgba(255, 255, 255, 0.045);
+}
+
+.deck-card,
+.contact-card {
+  padding: 0.36in;
+}
+
+.deck-card span,
+.contact-card span {
+  color: var(--muted);
+  font-size: 14pt;
+}
+
+.deck-card strong,
+.contact-card strong {
+  display: block;
+  margin: 0.1in 0;
+  color: var(--aqua);
+  font-size: 38pt;
+  line-height: 1;
+}
+
+.contact-card a {
+  display: block;
+  margin-bottom: 0.16in;
+  color: var(--champagne);
+  font-size: 28pt;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.proof-list {
+  display: grid;
+  gap: 0.16in;
+}
+
+.proof-list article,
+.module-grid article,
+.employee-slide-grid article,
+.pricing-grid article,
+.funds-grid article {
+  padding: 0.2in;
+}
+
+.proof-list span,
+.module-grid span,
+.roadmap-grid span {
+  display: block;
+  color: var(--aqua);
+  font-size: 13pt;
+  font-weight: 900;
+}
+
+.proof-list strong,
+.module-grid strong,
+.employee-slide-grid strong,
+.pricing-grid strong {
+  display: block;
+  margin: 0.08in 0;
+  font-size: 20pt;
+}
+
+.proof-list p,
+.module-grid p,
+.pricing-grid span,
+.employee-slide-grid span {
+  margin: 0;
+  font-size: 13pt;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.16in;
+}
+
+.stat-grid article {
+  min-height: 2.1in;
+  padding: 0.24in;
+}
+
+.stat-grid strong {
+  display: block;
+  color: var(--aqua);
+  font-size: 34pt;
+}
+
+.stat-grid span {
+  display: block;
+  margin-top: 0.1in;
+  color: var(--muted);
+  font-size: 15pt;
+  line-height: 1.4;
+}
+
+.module-grid,
+.employee-slide-grid,
+.pricing-grid,
+.funds-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.16in;
+}
+
+.module-grid article {
+  min-height: 1.7in;
+}
+
+.screen-slide .slide-content {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+}
+
+.screen-slide img {
+  width: 100%;
+  max-height: 6.15in;
+  object-fit: contain;
+  border: 1px solid rgba(241, 213, 146, 0.18);
+  border-radius: 0.12in;
+  box-shadow: 0 0.24in 0.7in rgba(0, 0, 0, 0.34);
+}
+
+.mobile-slide .slide-content {
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+}
+
+.mobile-strip {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25in;
+  align-items: start;
+}
+
+.mobile-strip img {
+  width: 100%;
+  max-height: 6.18in;
+  object-fit: contain;
+  border: 1px solid rgba(241, 213, 146, 0.18);
+  border-radius: 0.12in;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.flow-stack {
+  display: grid;
+  gap: 0.14in;
+}
+
+.flow-stack span {
+  min-height: 0.62in;
+  display: flex;
+  align-items: center;
+}
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.18in;
+}
+
+.roadmap-grid article {
+  min-height: 4.7in;
+  padding: 0.24in;
+}
+
+.roadmap-grid strong {
+  display: block;
+  margin: 0.12in 0;
+  font-size: 23pt;
+}
+
+.roadmap-grid p {
+  font-size: 14pt;
+}
+
+.roadmap-grid em {
+  display: block;
+  margin-top: 0.22in;
+  color: var(--champagne);
+  font-size: 18pt;
+  font-style: normal;
+  font-weight: 900;
+}
+
+.funds-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.funds-grid strong {
+  display: block;
+  color: var(--aqua);
+  font-size: 34pt;
+}
+
+.funds-grid span {
+  display: block;
+  color: var(--text);
+  font-size: 16pt;
+  line-height: 1.35;
+}
+
+.sources-slide p {
+  max-width: 11in;
+  font-size: 17pt;
+}
+
+footer {
+  position: absolute;
+  left: 0.64in;
+  right: 0.64in;
+  bottom: 0.32in;
+  z-index: 3;
+  color: rgba(246, 241, 231, 0.58);
+  font-size: 10pt;
+}
+
+@media print {
+  @page {
+    size: 16in 9in;
+    margin: 0;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}

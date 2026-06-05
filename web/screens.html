@@ -1,0 +1,650 @@
+<!doctype html>
+<html lang="en" class="screens-root">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AuraForce AI | Product Screens</title>
+    <meta
+      name="description"
+      content="First desktop product screens for AuraForce AI: command dashboard, unified inbox and AI employee studio."
+    >
+    <link rel="icon" type="image/svg+xml" href="../brand/auraforce-logo.svg">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="screens.css">
+  </head>
+  <body class="screens-page">
+    <header class="site-header" aria-label="Product screen navigation">
+      <a class="brand-mark" href="index.html#top" aria-label="AuraForce AI home">
+        <img src="../brand/auraforce-logo.svg" alt="" aria-hidden="true">
+        <span>AuraForce</span>
+        <span>AI</span>
+      </a>
+      <div class="header-cluster">
+        <nav>
+          <a href="index.html#platform">Platform</a>
+          <a href="#product-gallery">Gallery</a>
+          <a href="#module-gallery">Modules</a>
+          <a href="#screen-command">Dashboard</a>
+          <a href="#screen-inbox">Inbox</a>
+          <a href="#screen-employee">AI Studio</a>
+        </nav>
+        <a
+          class="header-pdf"
+          href="../source-materials/AuraForce_AI_Investment_Pitch_v0_2.pdf"
+          target="_blank"
+          rel="noopener"
+        >
+          PDF v0.2
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="screens-intro">
+        <div class="section-inner">
+          <p class="eyebrow">Product gallery</p>
+          <h1>Desktop command centre. Native mobile app feel.</h1>
+          <p>
+            Built in priority order for pitch use: executive overview, live lead execution
+            and AI employee control across desktop and mobile app contexts.
+          </p>
+        </div>
+      </section>
+
+      <section class="product-gallery" id="product-gallery">
+        <div class="gallery-shell">
+          <input class="gallery-radio" type="radio" name="gallery-mode" id="gallery-desktop" checked>
+          <input class="gallery-radio" type="radio" name="gallery-mode" id="gallery-mobile">
+
+          <div class="gallery-top">
+            <div>
+              <p class="eyebrow">View product</p>
+              <h2>Switch between desktop command views and mobile app workflows.</h2>
+            </div>
+            <div class="gallery-switcher" role="tablist" aria-label="Product gallery view">
+              <label for="gallery-desktop">Desktop</label>
+              <label for="gallery-mobile">Mobile App</label>
+            </div>
+          </div>
+
+          <div class="gallery-panels">
+            <div class="gallery-panel desktop-gallery" aria-label="Desktop product screens">
+              <article>
+                <a class="desktop-zoom-trigger" href="#zoom-command">
+                  <img src="../assets/screens/01-command-dashboard.png" alt="AuraForce AI executive command dashboard">
+                  <span>Zoom desktop</span>
+                </a>
+                <div>
+                  <span>Desktop 01</span>
+                  <h3>Executive Command</h3>
+                  <p>Owner view for pipeline, AI employees, response speed and usage wallet.</p>
+                </div>
+              </article>
+              <article>
+                <a class="desktop-zoom-trigger" href="#zoom-inbox">
+                  <img src="../assets/screens/02-unified-inbox.png" alt="AuraForce AI unified inbox live lead desk">
+                  <span>Zoom desktop</span>
+                </a>
+                <div>
+                  <span>Desktop 02</span>
+                  <h3>Live Lead Desk</h3>
+                  <p>WhatsApp lead, AI reply, qualification, booking and human handoff in one flow.</p>
+                </div>
+              </article>
+              <article>
+                <a class="desktop-zoom-trigger" href="#zoom-employee">
+                  <img src="../assets/screens/03-ai-employee-studio.png" alt="AuraForce AI employee studio permissions and scripts">
+                  <span>Zoom desktop</span>
+                </a>
+                <div>
+                  <span>Desktop 03</span>
+                  <h3>AI Employee Studio</h3>
+                  <p>Role GUI for permissions, scripts, tone, escalation rules and usage limits.</p>
+                </div>
+              </article>
+            </div>
+
+            <div class="gallery-panel mobile-gallery" aria-label="Mobile app product screens">
+              <article class="phone-card">
+                <div class="phone-frame">
+                  <div class="phone-screen mobile-command">
+                    <div class="phone-status"><span>9:41</span><span>5G</span></div>
+                    <header class="phone-header">
+                      <div><span>AuraForce AI</span><strong>Command</strong></div>
+                      <button type="button" aria-label="Notifications">12</button>
+                    </header>
+                    <section class="native-card hero-native-card">
+                      <span>AI coverage</span>
+                      <strong>24/7 active</strong>
+                      <p>Avg first response 00:42</p>
+                    </section>
+                    <div class="native-metrics">
+                      <div><span>Leads</span><strong>128</strong></div>
+                      <div><span>Viewings</span><strong>38</strong></div>
+                      <div><span>Follow-up</span><strong>91%</strong></div>
+                    </div>
+                    <section class="native-card">
+                      <div class="native-row"><strong>Marina 2BR inquiry</strong><span>New</span></div>
+                      <div class="native-row"><strong>Palm villa family</strong><span>Qualified</span></div>
+                      <div class="native-row"><strong>Creek Harbour</strong><span>16:30</span></div>
+                    </section>
+                    <nav class="phone-tabbar">
+                      <span class="active">Command</span><span>Inbox</span><span>AI</span>
+                    </nav>
+                  </div>
+                </div>
+                <h3>Mobile Command</h3>
+                <p>Native-style owner overview for daily lead and booking control.</p>
+              </article>
+
+              <article class="phone-card">
+                <div class="phone-frame">
+                  <div class="phone-screen mobile-inbox">
+                    <div class="phone-status"><span>9:41</span><span>5G</span></div>
+                    <header class="phone-header">
+                      <div><span>Lead Desk</span><strong>Layla Hassan</strong></div>
+                      <button type="button">Handoff</button>
+                    </header>
+                    <section class="native-card lead-summary-card">
+                      <span>Qualified renter</span>
+                      <strong>AED 180k/year</strong>
+                      <p>Marina / JBR - viewing today after 4 pm.</p>
+                    </section>
+                    <div class="native-chat">
+                      <p class="lead-bubble">Need furnished 2BR near Marina.</p>
+                      <p class="ai-bubble">Do you prefer Marina, JBR or Bluewaters?</p>
+                      <p class="lead-bubble">Marina or JBR. Today after 4 pm.</p>
+                      <p class="ai-bubble">Qualified. Preparing 16:30 viewing slot.</p>
+                    </div>
+                    <div class="native-action-bar">
+                      <button type="button">Approve reply</button>
+                    </div>
+                  </div>
+                </div>
+                <h3>Mobile Lead Desk</h3>
+                <p>AI-human conversation flow with booking and escalation controls.</p>
+              </article>
+
+              <article class="phone-card">
+                <div class="phone-frame">
+                  <div class="phone-screen mobile-studio">
+                    <div class="phone-status"><span>9:41</span><span>5G</span></div>
+                    <header class="phone-header">
+                      <div><span>AI Employee</span><strong>Receptionist</strong></div>
+                      <button type="button">Save</button>
+                    </header>
+                    <div class="native-segmented"><span>Role</span><span class="active">Rules</span><span>Test</span></div>
+                    <section class="native-card">
+                      <span>Tone</span>
+                      <strong>Premium concierge</strong>
+                    </section>
+                    <section class="native-card permission-native">
+                      <label><input type="checkbox" checked> Create lead records</label>
+                      <label><input type="checkbox" checked> Send WhatsApp replies</label>
+                      <label><input type="checkbox" checked> Suggest viewing slots</label>
+                      <label><input type="checkbox"> Confirm price negotiation</label>
+                    </section>
+                    <section class="native-card">
+                      <span>Escalation</span>
+                      <p>Handoff above AED 5M, legal questions or low confidence replies.</p>
+                    </section>
+                    <nav class="phone-tabbar">
+                      <span>Command</span><span>Inbox</span><span class="active">AI</span>
+                    </nav>
+                  </div>
+                </div>
+                <h3>Mobile AI Studio</h3>
+                <p>Native controls for permissions, rules, tone and human-approved limits.</p>
+              </article>
+            </div>
+          </div>
+
+          <section class="module-gallery-section" id="module-gallery" aria-label="AuraForce AI module gallery">
+            <div class="module-gallery-heading">
+              <div>
+                <p class="eyebrow">Module roadmap</p>
+                <h2>More than three screens: a modular command platform.</h2>
+              </div>
+              <p>
+                The first three views prove the core workflow. This slider shows how the same
+                architecture expands into the documented modules without overloading the MVP.
+              </p>
+            </div>
+
+            <div class="module-slider" aria-label="Additional product modules">
+              <article class="module-card priority">
+                <span>Phase 1</span>
+                <h3>Real Estate CRM</h3>
+                <p>Contacts, companies, listings, lead stages, owners and next actions in one workspace.</p>
+                <strong>First niche proof</strong>
+              </article>
+              <article class="module-card priority">
+                <span>Phase 1</span>
+                <h3>Appointment Booking</h3>
+                <p>Calendar slots, viewing proposals, reminders and conflict checks connected to the inbox.</p>
+                <strong>Revenue trigger</strong>
+              </article>
+              <article class="module-card priority">
+                <span>Phase 1</span>
+                <h3>Usage Wallet</h3>
+                <p>Tokens, voice minutes, WhatsApp, SMS and storage with caps, warnings and top-ups.</p>
+                <strong>Margin control</strong>
+              </article>
+              <article class="module-card">
+                <span>Phase 2</span>
+                <h3>Knowledge Base</h3>
+                <p>Company brain for FAQs, listings, scripts, policies and approved AI answers.</p>
+                <strong>Human-approved learning</strong>
+              </article>
+              <article class="module-card">
+                <span>Phase 2</span>
+                <h3>Workflow Automation</h3>
+                <p>Rules for follow-up, lead routing, reminders, escalation and CRM task creation.</p>
+                <strong>Repeatable operations</strong>
+              </article>
+              <article class="module-card">
+                <span>Phase 2</span>
+                <h3>Documents & Signing</h3>
+                <p>Document requests, signed files, contract handoff and controlled storage per tenant.</p>
+                <strong>Deal administration</strong>
+              </article>
+              <article class="module-card">
+                <span>Phase 3</span>
+                <h3>AI Call Centre</h3>
+                <p>Inbound voice, call summaries, transcripts, qualification scripts and handoff rules.</p>
+                <strong>Voice-first scale</strong>
+              </article>
+              <article class="module-card">
+                <span>Phase 3</span>
+                <h3>Marketing Suite</h3>
+                <p>Campaign follow-up, email/WhatsApp sequences, landing capture and lead nurturing.</p>
+                <strong>Pipeline growth</strong>
+              </article>
+              <article class="module-card">
+                <span>Phase 3</span>
+                <h3>Reputation Management</h3>
+                <p>Review requests, response drafting, sentiment tracking and client experience signals.</p>
+                <strong>Brand defence</strong>
+              </article>
+              <article class="module-card">
+                <span>Expansion</span>
+                <h3>HR & Onboarding</h3>
+                <p>Staff records, new-hire plans, training checklists and internal AI assistants.</p>
+                <strong>Team enablement</strong>
+              </article>
+              <article class="module-card">
+                <span>Expansion</span>
+                <h3>Vehicle Tracking</h3>
+                <p>Fleet location, driver status and dispatch workflows for rental and field teams.</p>
+                <strong>Car rental fit</strong>
+              </article>
+              <article class="module-card">
+                <span>Expansion</span>
+                <h3>Industry Templates</h3>
+                <p>Real estate, recruitment, car rental, clinics and legal workflows built on the same core.</p>
+                <strong>Marketplace path</strong>
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="desktop-screen-block" id="screen-command">
+        <div class="screen-title-row">
+          <div>
+            <p class="eyebrow">Screen 01</p>
+            <h2>Executive Command Dashboard</h2>
+          </div>
+          <div class="screen-title-actions">
+            <span>Owner overview</span>
+            <a href="#zoom-command">Zoom screen</a>
+          </div>
+        </div>
+
+        <div class="screen-frame">
+          <div class="app-shell command-screen">
+            <aside class="app-sidebar">
+              <div class="app-logo"><strong>AuraForce</strong><span>AI</span></div>
+              <div class="workspace-pill">Palm District Realty</div>
+              <nav class="app-nav" aria-label="AuraForce app navigation">
+                <a class="active" href="#">Command</a>
+                <a href="#">Lead Desk</a>
+                <a href="#">AI Employees</a>
+                <a href="#">Bookings</a>
+                <a href="#">Usage Wallet</a>
+                <a href="#">Settings</a>
+              </nav>
+              <div class="sidebar-status">
+                <span>AI coverage</span>
+                <strong>24/7 active</strong>
+              </div>
+            </aside>
+
+            <section class="app-main">
+              <div class="app-topbar">
+                <div>
+                  <span class="mini-label">Dubai real estate workspace</span>
+                  <h3>Executive Command</h3>
+                </div>
+                <div class="topbar-actions">
+                  <span>Growth plan</span>
+                  <button type="button">Top up wallet</button>
+                </div>
+              </div>
+
+              <div class="dashboard-metrics">
+                <article><span>New leads</span><strong>128</strong><em>+18% this week</em></article>
+                <article><span>Avg response</span><strong>00:42</strong><em>AI first reply</em></article>
+                <article><span>Booked viewings</span><strong>38</strong><em>12 pending confirmation</em></article>
+                <article><span>Follow-up done</span><strong>91%</strong><em>automatic sequences</em></article>
+              </div>
+
+              <div class="dashboard-layout">
+                <section class="pipeline-panel">
+                  <div class="panel-heading">
+                    <h4>Real estate pipeline</h4>
+                    <span>Live by stage</span>
+                  </div>
+                  <div class="pipeline-columns">
+                    <div>
+                      <span>New</span>
+                      <article><strong>Marina 2BR inquiry</strong><small>WhatsApp - 2 min ago</small></article>
+                      <article><strong>Downtown buyer</strong><small>Web chat - AED 3.2M</small></article>
+                    </div>
+                    <div>
+                      <span>Qualified</span>
+                      <article><strong>Palm villa family</strong><small>Budget matched</small></article>
+                      <article><strong>JVC investor</strong><small>Yield focused</small></article>
+                    </div>
+                    <div>
+                      <span>Viewing</span>
+                      <article><strong>Creek Harbour</strong><small>Today 16:30</small></article>
+                      <article><strong>Business Bay</strong><small>Tomorrow 11:00</small></article>
+                    </div>
+                    <div>
+                      <span>Offer</span>
+                      <article><strong>Dubai Hills</strong><small>Agent handoff</small></article>
+                    </div>
+                  </div>
+                </section>
+
+                <aside class="right-rail">
+                  <section class="rail-panel">
+                    <div class="panel-heading">
+                      <h4>AI employees</h4>
+                      <span>4 installed</span>
+                    </div>
+                    <div class="employee-compact active"><strong>AI Receptionist</strong><span>answering leads</span></div>
+                    <div class="employee-compact"><strong>AI Sales Rep</strong><span>follow-ups active</span></div>
+                    <div class="employee-compact"><strong>AI Leasing Assistant</strong><span>rental flow</span></div>
+                  </section>
+                  <section class="rail-panel wallet-panel">
+                    <div class="panel-heading">
+                      <h4>Usage wallet</h4>
+                      <span>safe margin</span>
+                    </div>
+                    <div class="wallet-meter"><span style="width: 64%"></span></div>
+                    <p>64% monthly AI and messaging usage. Auto top-up triggers at 20%.</p>
+                  </section>
+                </aside>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="desktop-screen-block" id="screen-inbox">
+        <div class="screen-title-row">
+          <div>
+            <p class="eyebrow">Screen 02</p>
+            <h2>Unified Inbox / Live Lead Desk</h2>
+          </div>
+          <div class="screen-title-actions">
+            <span>AI-human execution</span>
+            <a href="#zoom-inbox">Zoom screen</a>
+          </div>
+        </div>
+
+        <div class="screen-frame">
+          <div class="app-shell inbox-screen">
+            <aside class="app-sidebar slim-sidebar">
+              <div class="app-logo"><strong>AuraForce</strong><span>AI</span></div>
+              <nav class="app-nav">
+                <a class="active" href="#">Inbox</a>
+                <a href="#">Bookings</a>
+                <a href="#">Pipeline</a>
+                <a href="#">Knowledge</a>
+              </nav>
+            </aside>
+
+            <section class="conversation-list">
+              <div class="inbox-search">Search leads, channels or properties</div>
+              <article class="conversation-card active">
+                <span>WhatsApp</span>
+                <strong>Layla Hassan</strong>
+                <p>Looking for a furnished 2BR near Marina.</p>
+              </article>
+              <article class="conversation-card">
+                <span>Web chat</span>
+                <strong>Rami Al Noor</strong>
+                <p>Investment apartment, Downtown, cash buyer.</p>
+              </article>
+              <article class="conversation-card">
+                <span>Email</span>
+                <strong>Nora Properties</strong>
+                <p>Corporate relocation package request.</p>
+              </article>
+              <article class="conversation-card">
+                <span>Voice</span>
+                <strong>Ahmed Khalid</strong>
+                <p>Call transcript ready for review.</p>
+              </article>
+            </section>
+
+            <section class="chat-panel">
+              <div class="chat-header">
+                <div>
+                  <span class="mini-label">AI Receptionist active</span>
+                  <h3>Layla Hassan</h3>
+                </div>
+                <button type="button">Human handoff</button>
+              </div>
+
+              <div class="chat-thread">
+                <div class="message lead-message">
+                  <span>Lead</span>
+                  <p>Hi, I need a furnished 2 bedroom apartment near Dubai Marina. Budget around AED 180k yearly.</p>
+                </div>
+                <div class="message ai-message">
+                  <span>AI Receptionist</span>
+                  <p>I can help. Do you prefer Marina, JBR or Bluewaters, and when would you like to view?</p>
+                </div>
+                <div class="message lead-message">
+                  <span>Lead</span>
+                  <p>Marina or JBR. Viewing today after 4 pm if possible.</p>
+                </div>
+                <div class="message ai-message">
+                  <span>AI Sales Rep</span>
+                  <p>Qualified. Matching two listings and preparing a 16:30 viewing slot with the assigned agent.</p>
+                </div>
+              </div>
+
+              <div class="composer-row">
+                <span>Next AI reply is ready for approval</span>
+                <button type="button">Approve and send</button>
+              </div>
+            </section>
+
+            <aside class="lead-profile">
+              <div class="profile-card">
+                <span class="mini-label">Lead profile</span>
+                <h3>Qualified renter</h3>
+                <dl>
+                  <div><dt>Budget</dt><dd>AED 180k/year</dd></div>
+                  <div><dt>Area</dt><dd>Marina / JBR</dd></div>
+                  <div><dt>Intent</dt><dd>Move in within 30 days</dd></div>
+                  <div><dt>Owner</dt><dd>Sarah K.</dd></div>
+                </dl>
+              </div>
+
+              <div class="booking-card">
+                <span class="mini-label">Booking proposal</span>
+                <h3>Today, 16:30</h3>
+                <p>Marina Gate, furnished 2BR. Calendar conflict checked.</p>
+                <button type="button">Confirm viewing</button>
+              </div>
+
+              <div class="ai-score-card">
+                <strong>AI confidence 92%</strong>
+                <span>Escalate if price negotiation starts.</span>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="desktop-screen-block" id="screen-employee">
+        <div class="screen-title-row">
+          <div>
+            <p class="eyebrow">Screen 03</p>
+            <h2>AI Employee Studio</h2>
+          </div>
+          <div class="screen-title-actions">
+            <span>Agent GUI control</span>
+            <a href="#zoom-employee">Zoom screen</a>
+          </div>
+        </div>
+
+        <div class="screen-frame">
+          <div class="app-shell employee-screen">
+            <aside class="app-sidebar">
+              <div class="app-logo"><strong>AuraForce</strong><span>AI</span></div>
+              <div class="workspace-pill">AI Employee Marketplace</div>
+              <nav class="app-nav">
+                <a class="active" href="#">Receptionist</a>
+                <a href="#">Sales Rep</a>
+                <a href="#">Leasing Assistant</a>
+                <a href="#">Meeting Assistant</a>
+                <a href="#">Call Centre Agent</a>
+              </nav>
+            </aside>
+
+            <section class="employee-editor">
+              <div class="app-topbar">
+                <div>
+                  <span class="mini-label">Installed role</span>
+                  <h3>AI Receptionist</h3>
+                </div>
+                <div class="topbar-actions">
+                  <span>Version 0.9</span>
+                  <button type="button">Publish changes</button>
+                </div>
+              </div>
+
+              <div class="studio-layout">
+                <section class="studio-main">
+                  <div class="settings-grid">
+                    <article>
+                      <span class="mini-label">Job description</span>
+                      <p>Answer new inquiries, capture intent, qualify urgency and route the lead to the right human owner.</p>
+                    </article>
+                    <article>
+                      <span class="mini-label">Tone</span>
+                      <div class="segmented-control">
+                        <button type="button">Concierge</button>
+                        <button class="active" type="button">Premium</button>
+                        <button type="button">Direct</button>
+                      </div>
+                    </article>
+                  </div>
+
+                  <section class="permissions-panel">
+                    <div class="panel-heading">
+                      <h4>Allowed actions</h4>
+                      <span>human-approved boundaries</span>
+                    </div>
+                    <div class="permission-grid">
+                      <label><input type="checkbox" checked> Create lead records</label>
+                      <label><input type="checkbox" checked> Send WhatsApp replies</label>
+                      <label><input type="checkbox" checked> Suggest viewing slots</label>
+                      <label><input type="checkbox"> Confirm price negotiation</label>
+                      <label><input type="checkbox" checked> Escalate hot leads</label>
+                      <label><input type="checkbox"> Access billing data</label>
+                    </div>
+                  </section>
+
+                  <section class="script-panel">
+                    <div class="panel-heading">
+                      <h4>Qualification script</h4>
+                      <span>real estate template</span>
+                    </div>
+                    <ol>
+                      <li>Confirm buying or renting intent.</li>
+                      <li>Capture area, budget, timeline and property type.</li>
+                      <li>Match lead to active listings or agent territory.</li>
+                      <li>Offer booking window and create CRM next action.</li>
+                    </ol>
+                  </section>
+                </section>
+
+                <aside class="studio-rail">
+                  <section class="rail-panel">
+                    <div class="panel-heading">
+                      <h4>Escalation rules</h4>
+                      <span>strict controls</span>
+                    </div>
+                    <div class="rule-row"><strong>Budget above AED 5M</strong><span>handoff</span></div>
+                    <div class="rule-row"><strong>Legal or contract question</strong><span>handoff</span></div>
+                    <div class="rule-row"><strong>Low confidence reply</strong><span>draft only</span></div>
+                  </section>
+
+                  <section class="rail-panel">
+                    <div class="panel-heading">
+                      <h4>Usage limit</h4>
+                      <span>monthly cap</span>
+                    </div>
+                    <div class="wallet-meter"><span style="width: 48%"></span></div>
+                    <p>48% of AI receptionist budget used.</p>
+                  </section>
+
+                  <section class="test-card">
+                    <span class="mini-label">Test prompt</span>
+                    <p>"I want a luxury villa in Dubai Hills. Can I view tomorrow?"</p>
+                    <button type="button">Run simulation</button>
+                  </section>
+                </aside>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <div class="zoom-lightbox" id="zoom-command" role="dialog" aria-label="Executive Command Dashboard zoom view">
+        <a class="zoom-backdrop" href="#product-gallery" aria-label="Close zoom view"></a>
+        <figure>
+          <a class="zoom-close" href="#product-gallery">Close</a>
+          <img src="../assets/screens/01-command-dashboard.png" alt="Zoomed AuraForce AI executive command dashboard">
+          <figcaption>Executive Command Dashboard</figcaption>
+        </figure>
+      </div>
+
+      <div class="zoom-lightbox" id="zoom-inbox" role="dialog" aria-label="Unified Inbox zoom view">
+        <a class="zoom-backdrop" href="#product-gallery" aria-label="Close zoom view"></a>
+        <figure>
+          <a class="zoom-close" href="#product-gallery">Close</a>
+          <img src="../assets/screens/02-unified-inbox.png" alt="Zoomed AuraForce AI unified inbox and lead desk">
+          <figcaption>Unified Inbox / Live Lead Desk</figcaption>
+        </figure>
+      </div>
+
+      <div class="zoom-lightbox" id="zoom-employee" role="dialog" aria-label="AI Employee Studio zoom view">
+        <a class="zoom-backdrop" href="#product-gallery" aria-label="Close zoom view"></a>
+        <figure>
+          <a class="zoom-close" href="#product-gallery">Close</a>
+          <img src="../assets/screens/03-ai-employee-studio.png" alt="Zoomed AuraForce AI employee studio">
+          <figcaption>AI Employee Studio</figcaption>
+        </figure>
+      </div>
+    </main>
+  </body>
+</html>

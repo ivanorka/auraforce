@@ -1,0 +1,8 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AuraForce AI logo</title>
+  <desc id="desc">A simple vector monogram logo for AuraForce AI.</desc>
+  <rect width="512" height="512" rx="88" fill="#08090B"/>
+  <path d="M88 392L198 120H266L376 392H314L292 334H171L149 392H88ZM190 284H273L232 174L190 284Z" fill="#F1D592"/>
+  <path d="M300 120H430V173H360V232H422V283H360V392H300V120Z" fill="#48D6C8"/>
+  <path d="M84 432H428" stroke="#F1D592" stroke-width="14" stroke-linecap="round"/>
+</svg>
