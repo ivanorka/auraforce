@@ -21,6 +21,7 @@ AuraForce AI is a premium Dubai-rooted AI command platform for modern businesses
 - `brand/` - positioning, messaging and naming notes.
 - `web/` - static landing page prototype for investor/client conversations.
 - `assets/` - visual assets used by the web prototype.
+- `index.html` - live-domain entry point that redirects from the repository root to `web/index.html`.
 
 ## First Fundraising Target
 

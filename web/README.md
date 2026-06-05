@@ -18,23 +18,29 @@ The page uses the source pitch structure:
 - roadmap
 - investment logic
 
-Future updates should add real product screens once available.
+Future updates should keep product screens focused on investable proof, not every possible module.
 
 ## Current Product Screens
 
-The first desktop and mobile app screens are available in `screens.html` and exported as PNGs in `assets/screens/`:
+The current desktop and mobile app screens are available in `screens.html` and exported as PNGs in `assets/screens/`:
 
 - `01-command-dashboard.png`
 - `02-unified-inbox.png`
 - `03-ai-employee-studio.png`
+- `04-bookings-calendar.png`
+- `05-usage-wallet-billing.png`
+- `06-knowledge-workflows.png`
 - `mobile-01-command.png`
 - `mobile-02-lead-desk.png`
 - `mobile-03-ai-studio.png`
+- `mobile-04-bookings.png`
+- `mobile-05-wallet.png`
+- `mobile-06-knowledge.png`
 
 ## Current PDF
 
 The web-aligned PDF deck is:
 
-- `source-materials/AuraForce_AI_Investment_Pitch_v0_2.pdf`
+- `source-materials/AuraForce_AI_Investment_Pitch_v0_3.pdf`
 
 It is generated from `web/pitch-v0-2.html`.
