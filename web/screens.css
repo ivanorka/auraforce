@@ -211,7 +211,7 @@
   gap: 18px;
 }
 
-.mobile-page-control {
+.mobile-scroll-hint {
   display: none;
 }
 
@@ -1637,35 +1637,37 @@ dd {
     padding: 16px;
   }
 
-  #gallery-mobile:checked ~ .gallery-panels .mobile-page-control {
+  #gallery-mobile:checked ~ .gallery-panels .mobile-scroll-hint {
     display: flex;
   }
 
-  .mobile-page-control {
+  .mobile-scroll-hint {
+    align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 12px;
     margin: 0 0 14px;
     padding: 2px 0;
   }
 
-  .mobile-page-control a {
-    min-width: 34px;
-    min-height: 34px;
+  .mobile-scroll-hint span {
+    width: 36px;
+    height: 36px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     border: 1px solid rgba(241, 213, 146, 0.2);
     border-radius: 999px;
-    color: var(--muted);
+    color: var(--champagne);
     background: rgba(8, 9, 11, 0.54);
-    font-size: 11px;
+    font-size: 16px;
     font-weight: 900;
   }
 
-  .mobile-page-control a:hover,
-  .mobile-page-control a:focus-visible {
-    color: #151207;
-    background: var(--champagne);
+  .mobile-scroll-hint i {
+    width: min(118px, 34vw);
+    height: 2px;
+    border-radius: 999px;
+    background: linear-gradient(90deg, transparent, rgba(241, 213, 146, 0.52), transparent);
   }
 
   .module-card {
