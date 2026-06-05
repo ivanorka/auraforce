@@ -211,6 +211,10 @@
   gap: 18px;
 }
 
+.mobile-page-control {
+  display: none;
+}
+
 .module-gallery-section {
   margin-top: 22px;
   border-top: 1px solid rgba(241, 213, 146, 0.13);
@@ -1633,12 +1637,103 @@ dd {
     padding: 16px;
   }
 
+  #gallery-mobile:checked ~ .gallery-panels .mobile-page-control {
+    display: flex;
+  }
+
+  .mobile-page-control {
+    justify-content: center;
+    gap: 8px;
+    margin: 0 0 14px;
+    padding: 2px 0;
+  }
+
+  .mobile-page-control a {
+    min-width: 34px;
+    min-height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(241, 213, 146, 0.2);
+    border-radius: 999px;
+    color: var(--muted);
+    background: rgba(8, 9, 11, 0.54);
+    font-size: 11px;
+    font-weight: 900;
+  }
+
+  .mobile-page-control a:hover,
+  .mobile-page-control a:focus-visible {
+    color: #151207;
+    background: var(--champagne);
+  }
+
   .module-card {
     min-width: 254px;
     max-width: 254px;
   }
 
-  .desktop-gallery article,
+  #gallery-desktop:checked ~ .gallery-panels .desktop-gallery {
+    display: grid;
+  }
+
+  .desktop-gallery {
+    grid-auto-flow: row;
+    overflow-x: visible;
+    scroll-snap-type: none;
+    padding-bottom: 0;
+  }
+
+  .desktop-gallery article {
+    min-height: 128px;
+    display: grid;
+    grid-template-columns: 104px minmax(0, 1fr);
+    flex-basis: auto;
+    scroll-snap-align: none;
+  }
+
+  .desktop-zoom-trigger {
+    min-height: 100%;
+  }
+
+  .desktop-gallery img {
+    height: 100%;
+    min-height: 128px;
+    aspect-ratio: auto;
+    object-fit: cover;
+    border-right: 1px solid rgba(241, 213, 146, 0.12);
+    border-bottom: 0;
+  }
+
+  .desktop-zoom-trigger > span {
+    right: 8px;
+    bottom: 8px;
+    left: 8px;
+    min-height: 26px;
+    justify-content: center;
+    padding: 0 6px;
+    font-size: 9px;
+  }
+
+  .desktop-gallery article > div {
+    padding: 14px;
+  }
+
+  .desktop-gallery article > div > span {
+    font-size: 10px;
+  }
+
+  .desktop-gallery h3 {
+    margin-top: 6px;
+    font-size: 18px;
+  }
+
+  .desktop-gallery p {
+    margin-top: 6px;
+    font-size: 12px;
+    line-height: 1.45;
+  }
+
   .phone-card {
     flex-basis: 100%;
   }
